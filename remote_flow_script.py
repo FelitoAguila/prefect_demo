@@ -25,10 +25,10 @@ def run_resource(resource_name: str, bq_dest: dlt.destinations.bigquery):
     config: RESTAPIConfig = {
         "client": {
             "base_url": "https://api.github.com",
-            "auth": {
-                # To run the pipeline locally
-                "token": dlt.secrets["sources.github.access_token"],
-            },
+            # "auth": {
+            #     # To run the pipeline locally
+            #     "token": dlt.secrets["sources.github.access_token"],
+            # },
             "headers": {
                 "Accept": "application/vnd.github+json",
                 "X-GitHub-Api-Version": "2022-11-28",
